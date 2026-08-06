@@ -8,10 +8,9 @@ const Footer = () => {
         <div>
           <img src={assets.logo} alt="logo" className="mb-5 w-40" />
           <p className="w-full md:w-2/3 text-gray-600 leading-6">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Prescripto helps you find trusted doctors, book appointments
+            online in seconds, and manage your healthcare visits all in one
+            place.
           </p>
         </div>
 
@@ -30,8 +29,8 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li className="cursor-pointer">+92 333 1212123</li>
-            <li className="cursor-pointer">devali@gmail.com</li>
+            <li className="cursor-pointer">+1 (555) 000-0000</li>
+            <li className="cursor-pointer">support@prescripto.com</li>
           </ul>
         </div>
       </div>

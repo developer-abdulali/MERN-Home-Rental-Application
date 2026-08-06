@@ -131,10 +131,9 @@ const Appointment = () => {
           headers: {
             Authorization: `Bearer ${token}`,
           },
-        }
+        },
       );
 
-      // console.log("RESPONSE", res);
       if (res.data.success) {
         toast.success(res.data.message);
         getDoctorData();

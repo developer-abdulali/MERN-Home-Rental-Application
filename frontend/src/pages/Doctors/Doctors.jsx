@@ -17,8 +17,8 @@ const Doctors = () => {
           (doc) =>
             doc.speciality.toLowerCase() === speciality.toLowerCase() ||
             (speciality === "Gastroenterologist" &&
-              doc.speciality === "Gastroenterologits")
-        )
+              doc.speciality === "Gastroenterologits"),
+        ),
       );
     } else {
       setFilterDoc(doctors);

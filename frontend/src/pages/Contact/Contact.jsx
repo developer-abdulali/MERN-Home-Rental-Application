@@ -21,8 +21,8 @@ const Contact = () => {
             Suite 350, Washington, USA
           </p>
           <p className="text-gray-500">
-            Tel (415) 555-0123 <br />
-            Email:email@gmail.com
+            Tel +1 (555) 000-0000 <br />
+            Email:support@prescripto.com
           </p>
           <p className="font-semibold text-lg text-gray-600">
             Careers at PRESCRIPTO

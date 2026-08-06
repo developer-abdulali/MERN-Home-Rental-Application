@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Doctors from "./pages/Doctors/Doctors";
 import Login from "./pages/Login/Login";
@@ -11,6 +11,9 @@ import Appointment from "./pages/Appointment/Appointment";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/login";
+
   return (
     <div className="mx-4 sm:mx-[10%]">
       <Navbar />
@@ -25,7 +28,7 @@ const App = () => {
         <Route path="/my-appointments" element={<MyAppointments />} />
         <Route path="/appointment/:docId" element={<Appointment />} />
       </Routes>
-      <Footer />
+      {!isLoginPage && <Footer />}
     </div>
   );
 };
